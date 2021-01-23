@@ -1,0 +1,133 @@
+#container1{
+	@include background("../img/first.jpg",100vh,100%);
+	color: $white;
+	&-size{
+		@extend %cont-shared;
+		nav{
+			height: 50px;
+			.nav-title{
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				font-weight: $bold-weight;
+			}
+			.nav-el{
+				width: 51%;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				li{
+					padding: 0 23px;
+					text-align: center;
+					text-transform: uppercase;
+					&:first-child {
+						padding-left: 0;
+					}
+					&:last-child{
+						padding-right: 0;
+					}
+					a:hover {
+						color: $nav-hover;
+					}
+				}
+			}
+		}
+		.container1-content{
+			    text-align: center;
+				@extend %absolute;
+				height: 560px;
+				width: 90%;
+			h2{
+				font-family: $Kaushan;
+				font-size: $h2;
+				text-transform: capitalize;
+			}
+			h1{
+				font-family: $Montserat;
+				font-weight: $bold-weight;
+				font-size: $h1;
+				line-height: 140px;
+				text-transform: uppercase;
+				margin: 50px 0;
+			}
+			hr {
+				background-color: $white;
+				@extend %hr-shared;
+				margin-bottom: 50px;
+			}
+			a{
+				display: block;
+				width: 160px;
+				padding: 15px 0;
+				background-color: transparent;
+				border: 3px solid $white;
+				font-size: $h6;
+				font-weight: $bold-weight;
+				text-transform: uppercase;
+				margin: 0 auto;
+			}
+		}
+		.container1-foot {
+			font-weight: $bold-weight;
+			font-family: $Montserat;
+			text-transform: uppercase;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			div {
+				h4{
+					font-family: $Montserat;
+				}
+				display: inline-block;
+				width: 22%;
+				border-top: 3px solid $white;
+				padding: 28px 0;
+				margin: 0 1.7%;
+				&:first-child{
+					margin-left: 0;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	
+}
+@include media-lg{
+	#container1{
+		&-size{
+			nav{
+				.nav-el{
+					width: 73%;
+					text-align: right;
+					li{
+						padding: 0 1.7%;
+					}
+				}
+			}
+			.container1-content{
+				height: 370px;
+				width: 60%;
+				h2{
+				font-size: $h2_2;
+				}
+				h1{
+					font-size: $h2;
+					line-height: 80px;
+					margin: 30px 0;
+				}
+			}
+			.container1-foot{
+				div{
+					padding: 15px 0;
+					width: 22%;
+					margin: 0 1.6%;
+					h4{
+						font-size:$h5 ;
+					}
+				}
+			}
+		}
+	}
+}

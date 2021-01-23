@@ -1,0 +1,40 @@
+#container3 {
+	background-color: $bg;
+	color: $white;
+	&-size {
+		@extend %cont-shared;
+		text-align: center;
+		text-transform: uppercase;
+		.box {
+			display: inline-block;
+			width: 19.7%;
+			border-left: 1px solid $white;
+			height: 100%;
+			padding: 8vh 0;
+			vertical-align: top;
+			&:last-child{
+				border-right:1px solid $white;
+			}
+			h2{
+				font-weight: $bold-weight;
+				margin: 10px 0;
+			}
+		}
+
+	}
+}
+@include media-lg{
+	#container3{
+		height: 140px;
+		&-size{
+			.box{
+				width: 19.5%;
+				padding: 20px 0;
+				vertical-align: top;
+				h2{
+					font-size: $h2_2;
+				}
+			}
+		}
+	}
+}

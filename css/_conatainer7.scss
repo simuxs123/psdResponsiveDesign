@@ -1,0 +1,46 @@
+#container7{
+	background-color: $bg2;
+	padding: 8vh 0;
+	&-size{
+		@extend %cont-shared;
+		text-align: center;
+		.c7-img{
+			display: inline-block;
+			border: 3px solid $bg;
+			padding:25px;
+			vertical-align: middle;
+		}
+		.c7-cont{
+			display: inline-block;
+			width: 70%;
+			text-align: left;
+			padding-left: 30px;
+			vertical-align: middle;
+			h4{
+				display: inline-block;
+				margin-left: 5px;
+			}
+			p{
+				font-size: $h4;
+				margin-bottom: 15px;
+				line-height: 36px;
+			}
+		}
+		hr{
+			@extend %hr-shared;
+			display: inline-block;
+		}
+		.arr-left{
+			@extend %absolute;
+			right: unset;
+			margin: auto 0;
+			transform: rotate(-90deg);
+		}
+		.arr-right{
+			@extend %absolute;
+			left: unset;
+			margin: auto 0;
+			transform: rotate(90deg);
+		}
+	}
+}

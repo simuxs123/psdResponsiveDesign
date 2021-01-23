@@ -1,0 +1,107 @@
+#container14{
+	padding: 7vh 0;
+	background-color: $bg2;
+	position: relative;
+	&-size{
+		@extend %cont-shared;
+		padding: 2vh 0;
+		font-size: 0;
+		.mogo-cont{
+			display: inline-block;
+			width: 42%;
+			font-size: 1rem;
+			padding-right: 30px;
+			vertical-align: top;
+			h2{
+				font-size: $h2_2;
+				font-weight: $bold-weight;
+				color: $mogo;
+			}
+			h5{
+				font-weight: $bold-weight;
+				font-size: $mid;
+				span{
+					font-size: $very-sm;
+				}
+			}
+			hr{
+				margin: 20px 0;
+				background-color: $hr2;
+				height: 1px;
+				border: none;
+			}
+			.soc-p{
+				margin-top: 0;
+				span:first-child{
+					margin-left: 20px;
+				}
+			}
+			p{
+				margin: 30px 0;
+			}
+		}
+		.blogs-cont{
+			display: inline-block;
+			width: 35%;
+			font-size: 1rem;
+			vertical-align: top;
+			padding-right: 30px;
+			h6{
+				margin: 15px 0;
+			}
+			&-item{
+				width: 100%;
+				float: left;
+				margin: 14px 0;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				img{
+					float: left;
+				}
+				.blog-content{
+					float: right;
+					width: 67%;
+					h6{
+						margin-bottom: 0;
+						font-size: $very-sm;
+						line-height: 18px;
+					}
+					p{
+						font-size: $small;
+					}
+				}
+			}
+		}
+		.instagram-cont{
+			display: inline-block;
+			width: 23%;
+			font-size: 1rem;
+			vertical-align: top;
+			p{
+				font-size: $small;
+				line-height: 24px;
+			}
+			h6{
+				margin: 15px 0;
+			}
+			&-img{
+				margin: 25px 0 10px 0;
+			}
+		}
+		}
+	.footer {
+		text-align: center;
+		border-top: 1px solid $hr2;
+		padding: 15px 0;
+		@extend %absolute;
+		top: unset;
+		width: 1200px;
+		h6{
+			text-transform: unset;
+		}
+		span{
+			color: $hr;
+		}
+	}
+}

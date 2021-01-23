@@ -1,0 +1,63 @@
+#container5{
+	background:linear-gradient(to right,$opac, $opac),
+    url('../img/Layer4dem.jpg') no-repeat center center;
+	background-size: cover;
+	height: 900px;
+	width: 100%;
+	position: relative;
+	&-size{
+		@extend %cont-shared;
+		position: absolute;
+		text-align: center;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: initial;
+		h4{
+			margin-bottom: 20px ;
+		}
+		h3 {
+			font-weight: $bold-weight;
+			text-transform: uppercase;
+		}
+		hr {
+			@extend %hr-shared;
+			margin: 40px auto;
+		}
+		.ipad{
+			background:url('../img/ipad.png') no-repeat center top;
+			background-size: cover;
+			height: 585px;
+			width: 475px;
+			margin: 0 auto;
+		}
+		.iphone{
+			background:url('../img/iphone.png') no-repeat center top;
+			background-size: cover;
+			height: 455px;
+			width: 205px;
+			position: absolute;
+    		right: 250px;
+    		bottom: -70px;
+		}
+	}
+}
+@include media-lg{
+	#container5{
+		height: 600px;
+		&-size{
+			width: 450px;
+			.ipad{
+				background-position: center -80%;
+				height: 385px;
+    			width: 275px;
+			}
+			.iphone{
+				height: 265px;
+				width: 165px;
+				right: 0;
+    			bottom: -20px;
+			}
+		}
+	}
+}

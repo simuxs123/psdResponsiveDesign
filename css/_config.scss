@@ -5,7 +5,7 @@ $nav-hover:#fce38a;
 $hr:#f38181;
 $bg:#95e1d3;
 $bg2:#f8f8f8;
-$p:#999999;
+$par:#999999;
 $hr2:#e5e5e5;
 $opac:#fffdfde3;
 $mogo:#cccccc;
@@ -20,3 +20,91 @@ $bold-weight:     700;
 $Kaushan:'Kaushan Script', cursive;
 $Montserat:'Montserrat', sans-serif;
 $roboto:'Roboto', sans-serif;
+
+/*font size */
+$h1:150px;
+$h2:72px;
+$h2_2:46px;
+$h3:30px;
+$h4:24px;
+$h5:20px;
+$h6:14px;
+$p:15px;
+$mid:18px;
+$small:13px;
+$very-sm:12px;
+
+%cont-shared {
+	width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+%hr-shared {
+	height: 3px;
+	width: 60px;
+	background-color: $hr;
+	border: none;
+}
+
+%absolute{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+%effect{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;	
+	&:hover{
+		.effect-cont{
+			display: block;
+		}
+		top: -20px;
+		left:-20px;
+	}			
+}
+%effect-cont{
+	display: none;
+	color: $white;
+	font-size: $mid;
+	text-transform: uppercase;
+	font-weight: $bold-weight;
+	@extend %absolute;
+	width: 100%;
+}
+
+@mixin background($img, $h,$w){
+    background: url($img) no-repeat center center; 
+	background-size: cover;
+	height: $h;
+	width: $w;
+}
+@mixin media-xs{
+    @media screen and (max-width:478px){
+        @content;
+    }
+}
+@mixin media-md{
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+@mixin media-lg{
+    @media screen and (max-width:1300px){
+        %cont-shared {
+            width: 90%;
+        }
+        @content;
+    }
+}
+@mixin media-xl{
+    @media screen and (max-width:1919px){
+        @content;
+    }
+}

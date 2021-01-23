@@ -1,0 +1,8 @@
+#container9{
+	padding: 10vh 0;
+	background-color: $bg2;
+	&-size{
+		@extend %cont-shared;
+		text-align: center;
+	}
+}

@@ -1,0 +1,20 @@
+#container13{
+	background:linear-gradient(to right,$opac, $opac),
+	url('../img/Layer20.jpg') no-repeat center center;
+	background-size: cover;
+	padding: 7vh 0;
+	color: $hr;
+	&-size{
+		text-align: center;	
+		hr{
+			@extend %hr-shared;
+			margin:20px auto;
+		}
+		h4{
+			font-family: $Montserat;
+			text-transform: uppercase;
+			font-weight: 700;
+			margin-top: 20px;
+		}
+	}
+}	

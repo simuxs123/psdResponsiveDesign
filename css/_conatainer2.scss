@@ -1,0 +1,94 @@
+#container2{
+	padding: 10vh 0;
+	&-size{
+		@extend %cont-shared;
+		text-align: center;
+		h4{
+			margin-bottom: 20px ;
+		}
+		h3 {
+			font-weight: $bold-weight;
+			text-transform: uppercase;
+		}
+		p{
+			width: 80%;
+			margin:0 auto;
+		}
+		hr {
+			@extend %hr-shared;
+			background-color: $hr;
+			margin: 40px auto;
+		}
+		.img-block{
+			width: 100%;
+			margin-top: 80px;
+			&-item{
+				position: relative;
+				background-color: $bg;
+				display: inline-block;
+				width: 380px;
+				height: 250px;
+				margin: 0 1%;
+				&:first-child{
+					margin-left: 0;
+				}
+				&:last-child{
+					margin-right: 0;
+				}
+				#item1{
+					background: url("../img/layer1.jpg") no-repeat center center; 
+					background-size: cover;
+					&:hover{
+						background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/layer1.jpg");
+					}
+				}
+				#item2{
+					background: url("../img/layer2.jpg") no-repeat center center; 
+					background-size: cover;
+					&:hover{						
+						background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/layer2.jpg");
+					}
+				}
+				#item3{
+					background: url("../img/layer3.jpg") no-repeat center center; 
+					background-size: cover;
+					&:hover{
+						background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/layer3.jpg");
+					}
+				}
+				.effect {
+					@extend %effect;
+					&-cont {
+						@extend %effect-cont;
+						height: 55px;
+						img {
+							margin: 5px auto;
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include media-lg{
+	#container2{
+		&-size{
+			.img-block{
+				margin-top: 40px;
+				&-item{
+					width: 30%;
+					height: 20vw;
+					margin: 0 2.1%;
+					%effect-cont{
+						font-size: $small;
+						img{
+							width: 30px;
+							height: 24px;
+						}
+        			}
+				}
+			}
+		}
+	}
+}
