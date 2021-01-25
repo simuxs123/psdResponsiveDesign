@@ -242,6 +242,7 @@ table {
 
 #container1-size .container1-foot div h4 {
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
 }
 
 #container1-size .container1-foot div:first-child {
@@ -267,16 +268,19 @@ table {
     padding: 0 1.7%;
   }
   #container1-size .container1-content {
-    height: 370px;
-    width: 60%;
+    height: 300px;
+    width: 400px;
   }
   #container1-size .container1-content h2 {
     font-size: 46px;
   }
   #container1-size .container1-content h1 {
     font-size: 72px;
-    line-height: 80px;
-    margin: 30px 0;
+    line-height: 60px;
+    margin: 20px 0;
+  }
+  #container1-size .container1-content hr {
+    margin-bottom: 40px;
   }
   #container1-size .container1-foot div {
     padding: 15px 0;
@@ -297,23 +301,6 @@ table {
   }
   #container1-size nav .nav-el {
     visibility: hidden;
-  }
-  #container1-size .container1-content {
-    height: 300px;
-    width: 270px;
-  }
-  #container1-size .container1-content h2 {
-    font-size: 30px;
-  }
-  #container1-size .container1-content h1 {
-    font-size: 46px;
-    line-height: 50px;
-    margin: 30px 0;
-  }
-  #container1-size .container1-content a {
-    width: 120px;
-    padding: 10px 0;
-    font-size: 13px;
   }
   #container1-size .container1-foot div {
     padding: 10px 0;
@@ -794,7 +781,7 @@ h3 {
     height: 550px;
   }
   #container5 #container5-size {
-    width: 500px;
+    width: 475px;
   }
   #container5 #container5-size .ipad {
     background-position: center 10px;

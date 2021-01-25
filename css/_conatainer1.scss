@@ -104,6 +104,7 @@
 			div {
 				h4{
 					font-family: $Montserat;
+					margin-bottom: 0;
 				}
 				display: inline-block;
 				width: 22%;
@@ -140,15 +141,18 @@
 				}
 			}
 			.container1-content{
-				height: 370px;
-				width: 60%;
+				height: 300px;
+				width: 400px;
 				h2{
 				font-size: $h2_2;
 				}
 				h1{
 					font-size: $h2;
-					line-height: 80px;
-					margin: 30px 0;
+					line-height: 60px;
+					margin: 20px 0;
+				}
+				hr{
+					margin-bottom: 40px;
 				}
 			}
 			.container1-foot{
@@ -174,23 +178,6 @@
 				}
 				.nav-el{
 					visibility: hidden;
-				}
-			}
-			.container1-content{
-				height: 300px;
-    			width: 270px;
-				h2{
-				font-size: $h3;
-				}
-				h1{
-					font-size: $h2_2;
-					line-height: 50px;
-					margin: 30px 0;
-				}
-				a{
-					width: 120px;
-					padding:10px 0;
-					font-size: $small;
 				}
 			}
 			.container1-foot{
