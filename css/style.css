@@ -400,32 +400,32 @@ table {
 }
 
 #container2-size .img-block-item #item1 {
-  background: url("../img/men3.jpg") no-repeat center center;
+  background: url("../img/story3.jpg") no-repeat center center;
   background-size: cover;
 }
 
 #container2-size .img-block-item #item1:hover {
-  background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%), url("../img/men3");
+  background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%), url("../img/story3.jpg");
   background-size: cover;
 }
 
 #container2-size .img-block-item #item2 {
-  background: url("../img/men2.jpg") no-repeat center center;
+  background: url("../img/story1.jpg") no-repeat center center;
   background-size: cover;
 }
 
 #container2-size .img-block-item #item2:hover {
-  background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%), url("../img/men2.jpg");
+  background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%), url("../img/story1.jpg");
   background-size: cover;
 }
 
 #container2-size .img-block-item #item3 {
-  background: url("../img/men1.jpg") no-repeat center center;
+  background: url("../img/story2.jpg") no-repeat center center;
   background-size: cover;
 }
 
 #container2-size .img-block-item #item3:hover {
-  background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%), url("../img/men1.jpg");
+  background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%), url("../img/story2.jpg");
   background-size: cover;
 }
 
@@ -1185,32 +1185,32 @@ table {
 }
 
 #container8-size .c8-img-row-item-block #c8-item1 {
-  background: url("../img/layer6.jpg") no-repeat center center;
+  background: url("../img/men1.jpg") no-repeat center center;
   background-size: cover;
 }
 
 #container8-size .c8-img-row-item-block #c8-item1:hover {
-  background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%), url("../img/layer6.jpg");
+  background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%), url("../img/men1.jpg");
   background-size: cover;
 }
 
 #container8-size .c8-img-row-item-block #c8-item2 {
-  background: url("../img/layer7.jpg") no-repeat center center;
+  background: url("../img/men2.jpg") no-repeat center center;
   background-size: cover;
 }
 
 #container8-size .c8-img-row-item-block #c8-item2:hover {
-  background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%), url("../img/layer7.jpg");
+  background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%), url("../img/men2.jpg");
   background-size: cover;
 }
 
 #container8-size .c8-img-row-item-block #c8-item3 {
-  background: url("../img/layer8.jpg") no-repeat center center;
+  background: url("../img/men3.jpg") no-repeat center center;
   background-size: cover;
 }
 
 #container8-size .c8-img-row-item-block #c8-item3:hover {
-  background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%), url("../img/layer8.jpg");
+  background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%), url("../img/men3.jpg");
   background-size: cover;
 }
 
