@@ -124,6 +124,7 @@ table {
 }
 
 #container1-size nav .burger-btn {
+  visibility: hidden;
   position: fixed;
   right: 20px;
   top: 20px;
@@ -257,9 +258,6 @@ table {
   #container1-size {
     width: 90%;
   }
-  #container1-size nav .burger-btn {
-    visibility: hidden;
-  }
   #container1-size nav .nav-el {
     width: 73%;
     text-align: right;
@@ -324,12 +322,6 @@ table {
   }
   #container1-size {
     width: 95%;
-  }
-  #container1-size nav .burger-btn {
-    visibility: visible;
-  }
-  #container1-size nav .nav-el {
-    visibility: hidden;
   }
   #container1-size .container1-content {
     height: 300px;

@@ -7,6 +7,7 @@
 			height: 50px;
 			position: relative;
 			.burger-btn{
+					visibility: hidden;
 					position:fixed;
 					right:20px;
 					top: 20px;
@@ -129,9 +130,6 @@
 		&-size{
 			width: 90%;
 			nav{
-				.burger-btn{
-					visibility: hidden;
-				}
 				.nav-el{
 					width: 73%;
 					text-align: right;
@@ -197,14 +195,6 @@
 	#container1{
 		&-size{
 			width: 95%;
-			nav{
-				.burger-btn{
-					visibility: visible;
-				}
-				.nav-el{
-					visibility: hidden;
-				}
-			}
 			.container1-content{
 				height: 300px;
     			width: 270px;
