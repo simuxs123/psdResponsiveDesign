@@ -191,3 +191,35 @@
 		}
 	}
 }
+@include media-xs{
+
+	#container14{
+		&-size{
+			.mogo-cont{
+				.soc-p{
+					text-align: left;
+					span{
+						margin-right: 5px;
+					}
+					span:first-child{
+						margin-left: 5px;
+					}
+				}
+				.sub-input{
+					input{
+						width: 100%;
+						margin-left: 0;
+					}
+				}				
+			}
+			.blogs-cont{
+				.blog-content{
+					width: 68%;
+					h6{
+						line-height: 15px;
+					}
+				}
+			}
+		}
+	}
+}

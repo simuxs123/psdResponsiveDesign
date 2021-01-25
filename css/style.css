@@ -358,21 +358,21 @@ table {
   }
 }
 
-h4 {
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 #container2 {
   padding: 10vh 0;
 }
 
 #container2-size {
   text-align: center;
+}
+
+#container2-size h4 {
+  margin-bottom: 20px;
+}
+
+#container2-size h3 {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 #container2-size p {
@@ -497,17 +497,18 @@ h3 {
     margin-top: 40px;
   }
   #container2-size .img-block-item {
-    width: 29%;
-    height: 20vw;
-    margin: 0 2%;
+    width: 80%;
+    height: 50vw;
+    margin: 10px auto;
   }
   #container2-size .img-block-item .effect-cont {
-    font-size: 10px;
-    height: 45px;
+    font-size: initial;
+    height: 56px;
   }
   #container2-size .img-block-item .effect-cont img {
-    width: 20px;
-    height: 16px;
+    width: initial;
+    height: initial;
+    margin-bottom: 10px;
   }
 }
 
@@ -602,7 +603,7 @@ h3 {
 }
 
 #container4 {
-  padding: 13vh 0;
+  padding: 10vh 0;
 }
 
 #container4-size {
@@ -2193,6 +2194,37 @@ h3 {
   }
   #container14-size .instagram-cont {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 494px) {
+  .h3 {
+    font-size: 24px;
+  }
+  .h4 {
+    font-size: 20px;
+  }
+  .p {
+    font-size: 14px;
+  }
+  #container14-size .mogo-cont .soc-p {
+    text-align: left;
+  }
+  #container14-size .mogo-cont .soc-p span {
+    margin-right: 5px;
+  }
+  #container14-size .mogo-cont .soc-p span:first-child {
+    margin-left: 5px;
+  }
+  #container14-size .mogo-cont .sub-input input {
+    width: 100%;
+    margin-left: 0;
+  }
+  #container14-size .blogs-cont .blog-content {
+    width: 68%;
+  }
+  #container14-size .blogs-cont .blog-content h6 {
+    line-height: 15px;
   }
 }
 

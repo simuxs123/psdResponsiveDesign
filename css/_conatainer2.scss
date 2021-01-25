@@ -1,16 +1,16 @@
-h4{
+
+#container2{
+	padding: 10vh 0;
+	&-size{
+		@extend %cont-shared;
+		text-align: center;
+		h4{
 			margin-bottom: 20px ;
 		}
 		h3 {
 			font-weight: $bold-weight;
 			text-transform: uppercase;
 		}
-#container2{
-	padding: 10vh 0;
-	&-size{
-		@extend %cont-shared;
-		text-align: center;
-		
 		p{
 			width: 80%;
 			margin:0 auto;
@@ -101,8 +101,7 @@ h4{
 	#container2{
 		&-size{
 			.img-block{
-				&-item{
-				
+				&-item{				
 					margin: 0 2%;
 					%effect-cont{
 						font-size: $very-sm;
@@ -123,15 +122,16 @@ h4{
 			.img-block{
 				margin-top: 40px;
 				&-item{
-					width: 29%;
-					height: 20vw;
-					margin: 0 2%;
+					width: 80%;
+					height: 50vw;
+					margin: 10px auto;
 					%effect-cont{
-						font-size: 10px;
-						height: 45px;
+						font-size: initial;
+						height: 56px;
 						img{
-							width: 20px;
-							height: 16px;
+							width: initial;
+							height: initial;
+							margin-bottom: 10px;
 						}
         			}
 				}
