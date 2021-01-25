@@ -37,26 +37,26 @@
 					margin-right: 0;
 				}
 				#item1{
-					background: url("../img/layer1.jpg") no-repeat center center; 
+					background: url("../img/men3.jpg") no-repeat center center; 
 					background-size: cover;
 					&:hover{
-						background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/layer1.jpg");
+						background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/men3");
 						background-size: cover;
 					}
 				}
 				#item2{
-					background: url("../img/layer2.jpg") no-repeat center center; 
+					background: url("../img/men2.jpg") no-repeat center center; 
 					background-size: cover;
 					&:hover{						
-						background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/layer2.jpg");
+						background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/men2.jpg");
 						background-size: cover;
 					}
 				}
 				#item3{
-					background: url("../img/layer3.jpg") no-repeat center center; 
+					background: url("../img/men1.jpg") no-repeat center center; 
 					background-size: cover;
 					&:hover{
-						background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/layer3.jpg");
+						background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/men1.jpg");
 						background-size: cover;
 					}
 				}
