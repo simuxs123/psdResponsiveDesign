@@ -4,5 +4,29 @@
 	&-size{
 		@extend %cont-shared;
 		text-align: center;
+		img{
+			width: 100%;
+		}
+	}
+}
+@include media-xl{
+	#container9{
+		&-size{
+			width: 90%;
+		}
+	}
+}
+@include media-md{
+	#container9{
+		padding:7vh 0;
+		
+	}
+}
+@include media-xs{
+	#container9{
+		padding:5vh 0;
+		&-size{
+			width: 95%;
+		}
 	}
 }

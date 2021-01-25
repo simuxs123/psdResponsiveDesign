@@ -45,11 +45,8 @@
 				}
 				img{
 					display: inline-block;
-					margin-left: 10px;
 				}
 				.arr {
-					width: 24px;
-					height: 15px;
 					margin-right: 15px;
 					position: absolute;
 					right: 0;
@@ -59,7 +56,7 @@
 					border: 1px solid $hr2;
 					background-color: transparent;
 					margin-left: 20px;
-					padding: 15px 0;
+					padding: 15px;
 					position: relative;
 				}
 				.text {
@@ -76,6 +73,93 @@
 				}
 				.text2{
 					margin:0 0 10px 20px;
+				}
+			}
+		}
+	}
+}
+@include media-xl{
+	#container6{
+		&-size{
+			width: 90%;
+			.row-block{
+				height: 300px;
+				.img-block{
+					img{
+						width: 100%;
+    					height: 100%;
+					}
+				}
+				.info-block{
+					.item{
+						padding:4px 10px;
+						.arr{
+							width:20px;
+							height: 12px;
+						}
+						img{
+							width: 25px;
+						}
+						h6{
+							vertical-align: super;
+						}
+						.arr{
+							top:15px;
+						}
+					}
+					.text{
+						height: 135px;
+					}
+				}
+			}
+		}
+	}
+}
+@include media-md{
+	#container6{
+		&-size{
+			.row-block{
+				height: initial;
+				width: 80%;
+				margin: 0 auto;
+				.img-block{
+					position: relative;
+					height: 50%;
+					width: 100%;
+					margin-bottom: 20px;
+					img{
+						width: 100%;
+    					height: 100%;
+					}
+				}
+				.info-block{
+					position: relative;
+					width: 100%;
+    				height: 50%;
+					.item{
+						margin-left: 0;
+					}
+					.text{
+						margin-left: 0;
+						p{
+							font-size: $h6;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include media-xs{
+	#container6{
+		&-size{
+			width: 95%;
+			.row-block{
+				width: 90%;
+				.info-block{
+					.item{
+						padding: 0 5px;
+					}
 				}
 			}
 		}

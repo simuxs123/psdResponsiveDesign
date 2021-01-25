@@ -23,16 +23,53 @@
 
 	}
 }
-@include media-lg{
+@include media-xl{
 	#container3{
 		height: 140px;
 		&-size{
+			width: 90%;
 			.box{
 				width: 19.5%;
 				padding: 20px 0;
 				vertical-align: top;
 				h2{
 					font-size: $h2_2;
+				}
+			}
+		}
+	}
+}
+@include media-md{
+	#container3{
+		height: 110px;
+		&-size{
+			.box{
+				width: 19%;
+				padding: 20px 5px;
+				h2{
+					font-size: $h3;
+				}
+				h6{
+					font-size: $very-sm;
+				}
+			}
+		}
+	}
+}
+@include media-xs{
+	#container3{
+		height: 80px;
+		&-size{
+			width: 100%;
+			.box{
+				width: 18.8%;
+				padding: 10px 0;
+				h2{
+					font-size: $h4;
+					margin: 5px 0;
+				}
+				h6{
+					font-size: 10px;
 				}
 			}
 		}

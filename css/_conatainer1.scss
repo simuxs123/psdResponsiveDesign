@@ -5,18 +5,45 @@
 		@extend %cont-shared;
 		nav{
 			height: 50px;
+			position: relative;
+			.burger-btn{
+					position:fixed;
+					right:20px;
+					top: 20px;
+					height:32px;
+					width:32px;
+					z-index: 4;
+					i{
+						margin: 5px 0;
+						height:4px;
+						background-color:$white;
+						display: block;
+					}
+					.open:nth-child(1){
+							transform: rotate(45deg) translate(5px,8px);
+					}
+					.open:nth-child(2){
+						
+						background: transparent;
+					}
+					.open:nth-child(3){
+						transform: rotate(-45deg) translate(7px, -10px);
+					}
+			}
 			.nav-title{
+				display: inline-block;
 				position: absolute;
-				left: 0;
 				bottom: 0;
+				left: 0;
 				font-weight: $bold-weight;
 			}
 			.nav-el{
+				display: inline-block;
 				width: 51%;
 				position: absolute;
-				right: 0;
 				bottom: 0;
-				li{
+				right: 0;
+				ul li{
 					padding: 0 23px;
 					text-align: center;
 					text-transform: uppercase;
@@ -94,14 +121,20 @@
 	}
 	
 }
-@include media-lg{
+
+
+@include media-xl{
 	#container1{
 		&-size{
+			width: 90%;
 			nav{
+				.burger-btn{
+					visibility: hidden;
+				}
 				.nav-el{
 					width: 73%;
 					text-align: right;
-					li{
+					ul li{
 						padding: 0 1.7%;
 					}
 				}
@@ -125,6 +158,90 @@
 					margin: 0 1.6%;
 					h4{
 						font-size:$h5 ;
+					}
+				}
+			}
+		}
+	}
+}
+@include media-md{
+	#container1{
+		&-size{
+			width: 95%;
+			nav{
+				.burger-btn{
+					visibility: visible;
+				}
+				.nav-el{
+					visibility: hidden;
+				}
+			}
+			.container1-content{
+				height: 300px;
+    			width: 270px;
+				h2{
+				font-size: $h3;
+				}
+				h1{
+					font-size: $h2_2;
+					line-height: 50px;
+					margin: 30px 0;
+				}
+				a{
+					width: 120px;
+					padding:10px 0;
+					font-size: $small;
+				}
+			}
+			.container1-foot{
+				div{
+					padding: 10px 0;
+					width: 22.7%;
+					margin: 0 1%;
+					h4{
+						font-size:$h6 ;
+					}
+				}
+			}
+		}
+	}
+}
+@include media-xs{
+	#container1{
+		&-size{
+			width: 95%;
+			nav{
+				.burger-btn{
+					visibility: visible;
+				}
+				.nav-el{
+					visibility: hidden;
+				}
+			}
+			.container1-content{
+				height: 300px;
+    			width: 270px;
+				h2{
+				font-size: $h3;
+				}
+				h1{
+					font-size: $h2_2;
+					line-height: 50px;
+					margin: 30px 0;
+				}
+				a{
+					width: 120px;
+					padding:10px 0;
+					font-size: $small;
+				}
+			}
+			.container1-foot{
+				div{
+					padding: 10px 0;
+					width: 23.8%;
+					margin: 0;
+					h4{
+						font-size:2.9vw ;
 					}
 				}
 			}

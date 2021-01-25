@@ -86,8 +86,17 @@ $very-sm:12px;
 	width: $w;
 }
 @mixin media-xs{
-    @media screen and (max-width:478px){
-        @content;
+    @media screen and (max-width:494px){
+        .h3{
+            font-size: $h4;
+        }
+        .h4{
+            font-size: $h5;
+        }
+        .p{
+            font-size: $h6;
+        }
+        @content;   
     }
 }
 @mixin media-md{
@@ -96,14 +105,17 @@ $very-sm:12px;
     }
 }
 @mixin media-lg{
-    @media screen and (max-width:1300px){
-        %cont-shared {
-            width: 90%;
-        }
+    @media screen and (max-width:992px){
         @content;
     }
 }
 @mixin media-xl{
+    @media screen and (max-width:1300px){
+        @content;
+    }
+}
+
+@mixin media-xxl{
     @media screen and (max-width:1919px){
         @content;
     }

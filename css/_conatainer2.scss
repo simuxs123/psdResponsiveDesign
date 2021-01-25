@@ -1,15 +1,16 @@
-#container2{
-	padding: 10vh 0;
-	&-size{
-		@extend %cont-shared;
-		text-align: center;
-		h4{
+h4{
 			margin-bottom: 20px ;
 		}
 		h3 {
 			font-weight: $bold-weight;
 			text-transform: uppercase;
 		}
+#container2{
+	padding: 10vh 0;
+	&-size{
+		@extend %cont-shared;
+		text-align: center;
+		
 		p{
 			width: 80%;
 			margin:0 auto;
@@ -40,6 +41,7 @@
 					background-size: cover;
 					&:hover{
 						background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/layer1.jpg");
+						background-size: cover;
 					}
 				}
 				#item2{
@@ -47,6 +49,7 @@
 					background-size: cover;
 					&:hover{						
 						background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/layer2.jpg");
+						background-size: cover;
 					}
 				}
 				#item3{
@@ -54,6 +57,7 @@
 					background-size: cover;
 					&:hover{
 						background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/layer3.jpg");
+						background-size: cover;
 					}
 				}
 				.effect {
@@ -71,9 +75,10 @@
 		}
 	}
 }
-@include media-lg{
+@include media-xl{
 	#container2{
 		&-size{
+			width: 90%;
 			.img-block{
 				margin-top: 40px;
 				&-item{
@@ -85,6 +90,48 @@
 						img{
 							width: 30px;
 							height: 24px;
+						}
+        			}
+				}
+			}
+		}
+	}
+}
+@include media-md{
+	#container2{
+		&-size{
+			.img-block{
+				&-item{
+				
+					margin: 0 2%;
+					%effect-cont{
+						font-size: $very-sm;
+						img{
+							width: 26px;
+							height: 20px;
+						}
+        			}
+				}
+			}
+		}
+	}
+}
+@include media-xs{
+	#container2{
+		&-size{
+			width: 95%;
+			.img-block{
+				margin-top: 40px;
+				&-item{
+					width: 29%;
+					height: 20vw;
+					margin: 0 2%;
+					%effect-cont{
+						font-size: 10px;
+						height: 45px;
+						img{
+							width: 20px;
+							height: 16px;
 						}
         			}
 				}

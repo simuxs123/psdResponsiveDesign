@@ -51,6 +51,7 @@
 						background-size: cover;
 						&:hover{
 							background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/layer6.jpg");
+							background-size: cover;
 						}
 					}
 					#c8-item2{
@@ -58,6 +59,7 @@
 						background-size: cover;
 						&:hover{						
 							background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/layer7.jpg");
+							background-size: cover;
 						}
 					}
 					#c8-item3{
@@ -65,6 +67,7 @@
 						background-size: cover;
 						&:hover{
 							background: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url("../img/layer8.jpg");
+							background-size: cover;
 						}
 					}
 					.effect {
@@ -91,13 +94,96 @@
 										color: $white;
 									}
 								}
-								&:last-child{
-									border-right: none;
-								}
 							}
 						}
 					}
 
+				}
+			}
+		}
+	}
+}
+@include media-xl{
+	#container8{
+		&-size{
+			width: 90%;
+			.c8-img-row{
+				margin-top:80px;
+				&-item{
+					height: 40vw;
+					width: 30%;
+					&-block{
+						height: 100%;
+						.effect{
+							.socImg{
+								width: 30px;
+								height: 30px;
+								font-size: 20px ;
+								line-height: 32px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include media-md{
+	#container8{
+		&-size{
+			width: 90%;
+			.c8-img-row{
+				margin-top: 30px;
+				height: 60vw;
+				&-item{
+					vertical-align: middle;
+					h6{
+						font-size: $small;
+						line-height: 18px;
+					}
+					p{
+						font-size: $h6;
+						line-height: 20px;
+					}
+					&-block{
+						
+						.effect{
+							.socImg{
+								width: 25px;
+								height: 25px;
+								font-size: 17px ;
+								line-height: 26px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@include media-xs{
+	#container8{
+		&-size{
+			width: 95%;
+			.c8-img-row{
+				width: 60%;
+    			margin: 0 auto;
+    			height: 100%;
+				&-item{
+					height: 250px;
+					width: 100%;
+					margin: 40px 0;
+					&-block{
+						height: 100%;
+						.effect{
+							.socImg{
+								width: 25px;
+								height: 25px;
+								font-size: 17px ;
+								line-height: 26px;
+							}
+						}
+					}
 				}
 			}
 		}

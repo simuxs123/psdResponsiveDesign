@@ -18,3 +18,31 @@
 		}
 	}
 }	
+@include media-xl{
+	#container13{
+		padding: 5vh 0;
+	}
+}
+@include media-md{
+	#container13{
+		padding: 3vh 0;
+		h4{
+			margin:10px 0;
+		}
+	}
+}
+@include media-xs{
+	#container13{
+		h4{
+			margin:5px 0;
+			font-size: $mid;
+		}
+		hr{
+			margin:10px auto 0 auto;
+		}
+		img{
+			width: 18px;
+			height: 24px;
+		}
+	}
+}
