@@ -83,7 +83,7 @@
 		&-size{
 			width: 90%;
 			.row-block{
-				height: 300px;
+				height: 350px;
 				.img-block{
 					img{
 						width: 100%;
@@ -108,7 +108,21 @@
 						}
 					}
 					.text{
-						height: 135px;
+						height: 185px;
+					}
+				}
+			}
+		}
+	}
+}
+@include media-lg{
+	#container6{
+		&-size{
+			.row-block{
+				height: 290px;
+				.info-block{
+					.text{
+						height: 126px;
 					}
 				}
 			}

@@ -915,7 +915,7 @@ table {
     width: 90%;
   }
   #container6-size .row-block {
-    height: 300px;
+    height: 350px;
   }
   #container6-size .row-block .img-block img {
     width: 100%;
@@ -938,7 +938,16 @@ table {
     top: 15px;
   }
   #container6-size .row-block .info-block .text {
-    height: 135px;
+    height: 185px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #container6-size .row-block {
+    height: 290px;
+  }
+  #container6-size .row-block .info-block .text {
+    height: 126px;
   }
 }
 
