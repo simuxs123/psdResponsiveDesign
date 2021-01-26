@@ -57,16 +57,13 @@ $very-sm:12px;
 }
 %effect{
 	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	right: 0;	
+	height: 100%;	
+	transition: transform 0.5s linear ;
 	&:hover{
 		.effect-cont{
 			display: block;
 		}
-		top: -20px;
-		left:-20px;
+		transform: translate(-20px,-20px);
 	}			
 }
 %effect-cont{
@@ -78,7 +75,15 @@ $very-sm:12px;
 	@extend %absolute;
 	width: 100%;
 }
-
+@mixin transition-ease{
+    transition: all 0.3s ease-in-out;
+}
+@mixin cont10-img($url){
+	background-image: url($url); 				
+		&:hover{
+			background-image: linear-gradient(0deg, #e1cb7bbe 0%, #da7373be 100%),url($url);							
+		}
+}
 @mixin background($img, $h,$w){
     background: url($img) no-repeat center center; 
 	background-size: cover;

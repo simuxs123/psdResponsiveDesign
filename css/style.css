@@ -87,14 +87,11 @@ table {
 #container2-size .img-block-item .effect, #container8-size .c8-img-row-item-block .effect {
   width: 100%;
   height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
+  transition: transform 0.5s linear;
 }
 
 #container2-size .img-block-item .effect:hover, #container8-size .c8-img-row-item-block .effect:hover {
-  top: -20px;
-  left: -20px;
+  transform: translate(-20px, -20px);
 }
 
 #container2-size .img-block-item .effect:hover .effect-cont, #container8-size .c8-img-row-item-block .effect:hover .effect-cont {
@@ -121,6 +118,7 @@ table {
 #container1-size nav {
   height: 50px;
   position: relative;
+  transform: translateY(0);
 }
 
 #container1-size nav .burger-btn {
@@ -138,10 +136,11 @@ table {
   height: 4px;
   background-color: #ffffff;
   display: block;
+  transition: all 0.3s ease-in-out;
 }
 
 #container1-size nav .burger-btn .open:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 8px);
+  transform: rotate(45deg) translate(7px, 6px);
 }
 
 #container1-size nav .burger-btn .open:nth-child(2) {
@@ -149,7 +148,7 @@ table {
 }
 
 #container1-size nav .burger-btn .open:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -10px);
+  transform: rotate(-45deg) translate(7px, -6px);
 }
 
 #container1-size nav .nav-title {
@@ -169,6 +168,7 @@ table {
 }
 
 #container1-size nav .nav-el ul li {
+  transition: all 0.3s ease-in-out;
   padding: 0 23px;
   text-align: center;
   text-transform: uppercase;
@@ -184,6 +184,22 @@ table {
 
 #container1-size nav .nav-el ul li a:hover {
   color: #fce38a;
+  transition: all 0.3s ease-in-out;
+}
+
+#container1-size nav .nav-el ul li a:after {
+  content: '';
+  display: block;
+  width: 0px;
+  margin: 5px auto;
+  height: 2px;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#container1-size nav .nav-el ul li a:hover:after {
+  width: 100%;
+  background: #fce38a;
 }
 
 #container1-size .container1-content {
