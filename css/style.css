@@ -1471,7 +1471,7 @@ table {
 }
 
 #container10-size .img-block {
-  width: 1920px;
+  max-width: 1920px;
   height: 780px;
   margin: 80px auto;
   font-size: 0;
